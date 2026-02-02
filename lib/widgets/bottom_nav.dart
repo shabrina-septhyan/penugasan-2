@@ -12,7 +12,7 @@ class _BottomNavState extends State<BottomNav> {
   UserLogin userLogin = UserLogin();
   String? role;
   getDataLogin() async {
-    var user = await userLogin!.getUserLogin();
+    var user = await userLogin.getUserLogin();
     if (user!.status != false) {
       setState(() {
         role = user.role;
